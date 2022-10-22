@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+:root {
+    --gray6: #12181b;
+    --black: #000000;
+    --white: #ffffff;
+    --blue-color: #1a73e8;
+    --hover-color: #e9ecef;
+    --border-input: #ced4da;
+    --button-hover: #366bb3;
+    --font-body:'Poppins', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: var(--white);
+    color: var(--gray6);
+    font-family: var(--font-body);
+}
+ul {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    font-size: 12px;
+    color: var(--blue-color);
+}
+h1,
+h2,
+h3 {
+    font-weight: 400;
+}
+p {
+    font-size: 12px;
+}
+
+/*main area of section body*/
+main {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+}
+
+/*container cover of main form*/
+.container {
+    margin-top: 50px;
+    width: 450px;
+    height: 480px;
+    border: 1px solid var(--border-input);
+    border-radius: 6px;
+}
+
+/*section logo and text sign in*/
+.head {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.head img {
+    width: 80px;
+    height: auto;
+}
+.head h3 {
+    font-size: 18px;
+}
+
+.head p {
+    font-size: 15px;
+}
+
+/*section of main for input*/
+.main-form {
+    width: 100%;
+    padding: 30px;
+    display: grid;
+}
+.main-form input {
+    font-family: var(--font-body);
+    height: 45px;
+    border-style: none;
+    border: 1px solid var(--border-input);
+    border-radius: 3px;
+}
+.main-form ::placeholder {
+    padding: 12px;
+    height: 60px;
+    font-weight: 300;
+}
+
+.learn-more {
+    margin-top: 30px;
+}
+
+.create-acc {
+    margin-top: 60px;
+    display:flex;
+    justify-content: space-between;
+}
+.create-acc a {
+    padding: 3px;
+    font-weight: 400;
+}
+.create-acc a:hover {
+    background-color: var(--hover-color) ;
+    border-radius: 3px;
+}
+
+.create-acc button {
+    width: 60px;
+    height: 30px;
+    padding: 9px;
+    background-color: var(--blue-color);
+    color: var(--white);
+    border-style: none;
+    border-radius: 3px;
+}
+.btn-next button p {
+    margin-top: -5px;
+
+}
+.btn-next button:hover {
+    background-color: var(--button-hover);
+}
+
+/*footer section of language and optional terms*/
+
+.footer {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.footer a {
+    font-size: 10px;
+    color: var(--black);
+}
+.footer select {
+    border-style: none;
+}
+.select-language {
+    font-size: 10px;
+}
+.select-language input::placeholder {
+    height: 30px;
+}
+option {
+    border-style: none;
+}
+.detail-list {
+    display: flex;
+}
+.detail-list a {
+    margin-left: 1rem;
+    margin-top: 6px;
+}
+
+
+
+/*responsive for mobile */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 500px) {
+    main {
+        height: 100vh;
+    }
+    .container {
+        border-style: none;
+    }
+    .footer {
+        position: absolute;
+        bottom: 30px;
+        margin-left: 30px;
+    } 
+    .detail-list {
+        padding-left: 30px;
+    }
+
+}
